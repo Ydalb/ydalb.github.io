@@ -16,7 +16,7 @@ function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
     reader.onload = function (e) {
-      var $image = $('<img />').attr('src', event.target.result);
+      var $image = $('<img />').attr('src', e.target.result);
       $('#preview').html($image);
       // Must wait for image to load in DOM, not just load from FileReader
       $image.on('load', function() {
