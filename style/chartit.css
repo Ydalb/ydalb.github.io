@@ -36,7 +36,6 @@
 }
 
 body {
-  background-color:#faeae3;
   color:#333;
 }
 
@@ -48,11 +47,16 @@ header {
   text-decoration: none;
   color:#5f5a78;
 }
+.logo h1 {
+  display: inline-block;
+  color: blanchedalmond;
+  font-size: 1.3em;
+}
 .lead {
   margin:0;
   color:#888;
 }
-h2 {
+h1,h2 {
   font-family: 'jaapokki';
   font-size:30px;
   text-transform: uppercase;
@@ -73,7 +77,7 @@ main {
 .btn, .btn-large,
 .btn:hover, .btn-large:hover,
 .replay {
-  background-color:#5f5a78;
+  background-color:#4e9cfe;
 }
 .btn.success, .btn-large.success,
 .btn.success:hover, .btn-large.success:hover {
@@ -199,4 +203,22 @@ footer {
   padding:80px 20px 30px;
   color:#888;
   text-align:center;
+}
+
+#punchline{
+  margin: 10em 0;
+  filter:contrast(2.5);
+}
+
+#backChart{
+  width:"100%";
+  background-image: url(../assets/lucho-41.jpg); 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */ 
+  
+  height: 100vh;
+}
+
+#index-banner{
+  height: 100vh;
 }
