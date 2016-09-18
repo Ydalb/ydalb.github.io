@@ -83,13 +83,17 @@ main {
 .btn.success:hover, .btn-large.success:hover {
   background-color:#4e9cfe;
 }
+.dropdown-content li>a,
+.dropdown-content li>span {
+  color:#4e9cfe;
+}
 
 section {
   height:100vh;
   display:none;
 }
 section + section {
-  padding-top:50px;
+  padding-top:30px;
 }
 #upload {
   height:auto;
@@ -116,7 +120,7 @@ section + section {
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(1);
   -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1); 
+  -ms-transform: scale(1);
   -moz-transition: all 200ms ease-in;
   -moz-transform: scale(1);
   transition: all 200ms ease-in;
@@ -188,19 +192,19 @@ section + section {
 }
 
 #results {
-  padding:200px 0 0;
   display:none;
   text-align: center;
-  min-height: 100vh;
-  /*background:#ffe;*/
-  /*overflow-y:scroll;*/
 }
 #results > div {
   margin:0 auto;
 }
 
 footer {
-  padding:80px 20px 30px;
+  position:fixed;
+  bottom:0;
+  right:0;
+  left:0;
+  height:30px;
   color:#888;
   text-align:center;
 }

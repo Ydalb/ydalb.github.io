@@ -1,5 +1,9 @@
-var _LONG_WAIT  = 4000;
-var _SHORT_WAIT = 1000;
+var _LONG_WAIT    = 4000;
+var _SHORT_WAIT   = 1000;
+var _PDF_COCA     = 'pdf/cocacola.pdf';
+var _PDF_CHARTIT1 = 'pdf/chartit1.pdf';
+var _PDF_CHARTIT2 = 'pdf/chartit2.pdf';
+
 $(document).ready(function () {
 
   loadAnimations();
@@ -12,8 +16,8 @@ function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
     reader.onload = function (e) {
-      var $image = $('<img />').attr('src', event.target.result);
-      $('#preview').append($image);
+      var $image = $('<img />').attr('src', e.target.result);
+      $('#preview').html($image);
       // Must wait for image to load in DOM, not just load from FileReader
       $image.on('load', function() {
         $('#preview').show();
@@ -39,20 +43,20 @@ function loadAnimations() {
     gotoNextSection($(this), _SHORT_WAIT);
   });
   $('body').on('change', 'input[name="q1"]', function(event) {
+    $('input[name="q1"]').attr('disabled', 'disabled');
+    $(this).removeAttr('disabled')
     gotoNextSection($(this), _SHORT_WAIT);
   });
   $('body').on('change', 'input[name="q2"]', function(event) {
+    $('input[name="q2"]').attr('disabled', 'disabled');
+    $(this).removeAttr('disabled')
     gotoNextSection($(this), _SHORT_WAIT);
-    // loader(true);
-    // setTimeout(function() {
-    //   loader(false);
-    //   $('#q3').fadeIn();
-    //   $('body').animate({scrollTop: $('#q3').offset().top}, 1000);
-    //   }, _SHORT_WAIT
-    // );
   });
   $('body').on('change', 'input[name="q3"]', function(event) {
+    $('input[name="q3"]').attr('disabled', 'disabled');
+    $(this).removeAttr('disabled')
     gotoNextSection($(this), _LONG_WAIT);
+    prepareDownload();
   });
 }
 
@@ -65,10 +69,26 @@ function gotoNextSection($formElement, timeToWait, callback) {
       callback();
     }
     $nextSection.fadeIn();
-    $('body').animate({scrollTop: $nextSection.offset().top}, 1000);
+    $('html,body').animate({scrollTop: $nextSection.offset().top}, 1000);
   }, timeToWait);
 }
 
+/**
+ * h4ck :o
+ */
+function prepareDownload() {
+  // Nom de l'image
+  var filename = $('#file').val();
+  var answer1  = $('input[name="q1"]:checked').val();
+  var $link    = $('#results a');
+  var href     = _PDF_CHARTIT2;
+  if (filename.indexOf('oca') !== -1) {
+    href = _PDF_COCA;
+  } else if (answer1 == 'a14') {
+    href = _PDF_CHARTIT1;
+  }
+  $link.attr('href', href);
+}
 
 
 function loader(show) {
