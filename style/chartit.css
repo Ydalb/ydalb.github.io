@@ -50,7 +50,7 @@ header {
 }
 .lead {
   margin:0;
-  font-style: italic;
+  color:#888;
 }
 h2 {
   font-family: 'jaapokki';
@@ -80,11 +80,20 @@ main {
   background-color:#4e9cfe;
 }
 
-
+section {
+  height:100vh;
+  display:none;
+}
+section + section {
+  padding-top:50px;
+}
+#upload {
+  height:auto;
+  display:block;
+}
 .question {
   display:none;
   padding:80px 0;
-  height:100vh;
 }
 .question input,
 .question label:before,
@@ -148,6 +157,9 @@ main {
 .question input:checked + label .img-answer {
   opacity: 1;
 }
+#preview {
+  display:none;
+}
 #preview img {
   max-width: 100%;
 }
@@ -184,6 +196,7 @@ main {
 }
 
 footer {
-  padding:100px 20px 30px;
+  padding:80px 20px 30px;
+  color:#888;
   text-align:center;
 }
