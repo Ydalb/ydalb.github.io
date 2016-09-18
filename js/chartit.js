@@ -1,5 +1,5 @@
-var _LONG_WAIT  = 1000;
-var _SHORT_WAIT = 200;
+var _LONG_WAIT  = 4000;
+var _SHORT_WAIT = 1000;
 $(document).ready(function () {
 
   loadAnimations();
