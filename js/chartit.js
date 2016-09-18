@@ -33,6 +33,10 @@ function readURL(input) {
 
 
 function loadAnimations() {
+  $('body').on('click', '#get-started', function(event) {
+    $('#upload').fadeIn();
+    $('html,body').animate({scrollTop: $('#upload').offset().top}, 1000);
+  })
   // Goto questions
   $('body').on('change', '#file', function(event) {
     if (!readURL(this)) {

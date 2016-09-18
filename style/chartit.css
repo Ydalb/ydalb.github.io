@@ -37,6 +37,7 @@
 
 body {
   color:#333;
+  background-color:#fafafa;
 }
 
 header {
@@ -50,7 +51,7 @@ header {
 .logo h1 {
   display: inline-block;
   color: blanchedalmond;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 .lead {
   margin:0;
@@ -91,17 +92,10 @@ main {
 section {
   height:100vh;
   display:none;
-}
-section + section {
-  padding-top:30px;
-}
-#upload {
-  height:auto;
-  display:block;
+  padding:60px 0 0;
 }
 .question {
   display:none;
-  padding:80px 0;
 }
 .question input,
 .question label:before,
@@ -205,21 +199,32 @@ footer {
   right:0;
   left:0;
   height:30px;
-  color:#888;
+  color:#333;
   text-align:center;
+}
+footer .heart {
+  color:red;
 }
 
 #punchline{
-  margin: 10em 0;
+  position:absolute;
+  left:50%;
+  top:365px;
+  margin:0 0 0 -290px;
   filter:contrast(2.5);
+}
+#get-started {
+  position:absolute;
+  left:50%;
+  margin:0 0 0 -80px;
+  top:440px;
 }
 
 #backChart{
   width:"100%";
-  background-image: url(../assets/lucho-41.jpg); 
+  background-image: url(../assets/lucho-41.jpg);
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */ 
-  
+  background-size: cover; /* version standardisée */
   height: 100vh;
 }
 
