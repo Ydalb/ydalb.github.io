@@ -69,7 +69,7 @@ function gotoNextSection($formElement, timeToWait, callback) {
       callback();
     }
     $nextSection.fadeIn();
-    $('body').animate({scrollTop: $nextSection.offset().top}, 1000);
+    $('html,body').animate({scrollTop: $nextSection.offset().top}, 1000);
   }, timeToWait);
 }
 
