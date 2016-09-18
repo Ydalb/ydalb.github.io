@@ -1,5 +1,5 @@
-var _LONG_WAIT    = 4000;
-var _SHORT_WAIT   = 1000;
+var _LONG_WAIT    = 2500;
+var _SHORT_WAIT   = 700;
 var _PDF_COCA     = 'pdf/cocacola.pdf';
 var _PDF_CHARTIT1 = 'pdf/chartit1.pdf';
 var _PDF_CHARTIT2 = 'pdf/chartit2.pdf';
