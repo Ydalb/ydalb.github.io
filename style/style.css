@@ -1,0 +1,171 @@
+section{
+    height: 100vh;
+    color: dimgray;
+    border-bottom: solid dimgray 1px;
+}
+
+section h1{
+    font-size: 2.4em;
+}
+section h2{
+    font-size: 2em;
+}
+.vbox{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    margin: 10px;
+}
+
+.hbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 10px;
+}
+
+.roundedColors{
+    width: 60px;
+    height: 60px;
+    
+    margin: 20px 20px;
+    display: inline-block
+} 
+
+.middle{
+    margin: 20vh 10vh;
+}
+
+.genColor1{
+    background:crimson;
+}
+
+.genColor2{
+    background:aliceblue;
+}
+
+.genColor3{
+    background:darkblue;
+}
+
+#title img{
+    width:20%;
+}
+
+ul li{
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+/* Des lettres dans le code */
+.envelope {
+    background: white;
+    border: 1px solid #cccccc;
+    margin: 1em;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.2);
+}
+
+.window {
+    position: relative;
+    border-radius: 0.25em;
+    border: 1px solid rgba(76, 71, 209, 0.3);
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAW0lEQVQYV2NkAAJvt0tpW3fpzQLRID6IjSwOYjOCCBhA1gBTDNPAiEsSq4kwxTBJZOthtsFNxOcEkEFwN2LzELJNWE1Edx/c14SCB2w1ukfQgwXGB7sRWTEuPgDryG8vFVeFFQAAAABJRU5ErkJggg==) 0 0 repeat;
+}
+
+.logosm{
+    position: relative;
+    background-color: black;
+}
+
+.envelope.dl {
+    width: 20em;
+    height: 10em;
+}
+
+.envelope.dl .window {
+    top: 30%;
+    left: 42%;
+    width: 40%;
+    height: 25%;
+}
+
+.envelope.dl .logosm {
+    top: 20%;
+    left: 10%;
+    width: 10%;
+    height: 10%
+}
+
+.envelope.dl .logosm img {
+   width: 100%;
+}
+
+.logosm{
+    position: relative;
+}
+
+.lettre, .cartevisite {
+    background: white;
+    border: 1px solid #cccccc;
+    margin: 1em;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.2);
+}
+
+.lettre .txt, .cartevisite .txt{
+    position: relative;
+    top: 1%;
+    left: 10%;
+    font-size: 5px;
+    width: 18%;
+}
+.lettre .txtbas, .cartevisite .txtbas{
+    position: relative;
+    top: 85%;
+    left: 5%;
+    font-size: 5px;
+}
+
+.lettre.dl{
+    width: 20em;
+    height: 30em;
+}
+
+
+.lettre.dl .logosm, .cartevisite .logosm {
+    top: 10%;
+    left: 10%;
+    width: 10%;
+    height: 6%
+}
+
+.lettre.dl .logosm img, .cartevisite .logosm img {
+   width: 100%;
+}
+
+.cartevisite .logosm {
+    top: 30%;
+    left: 10%;
+    width: 30%;
+    height: 6%
+}
+
+.cartevisite{
+    width: 12em;
+    height: 7em;
+}
+
+.cartevisite .txt{
+    position: relative;
+    top: 32%;
+    left: 45%;
+    font-size: 5px;
+    width: 50%;
+}
+.cartevisite .txtbas{
+    position: relative;
+    top: 85%;
+    left: 5%;
+    font-size: 5px;
+}
