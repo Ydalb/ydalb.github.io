@@ -84,6 +84,7 @@ main {
 .question {
   display:none;
   padding:80px 0;
+  height:100vh;
 }
 .question input,
 .question label:before,
@@ -171,8 +172,10 @@ main {
 }
 
 #results {
-  min-height:100vh;
+  padding:200px 0 0;
   display:none;
+  text-align: center;
+  min-height: 100vh;
   /*background:#ffe;*/
   /*overflow-y:scroll;*/
 }
