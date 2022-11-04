@@ -95,3 +95,17 @@ header > nav > ul > li > a:focus {
 
 
 /* STATISTICS */
+table > thead > tr > td {
+	vertical-align: middle;
+}
+table > thead > tr > td > img {
+	margin: 0 10px;
+}
+table > thead > tr > td > i {
+	font-size: 4em;
+	font-style: normal;
+	margin: 0 10px;
+}
+table > tbody > tr > td {
+	text-align: center;
+}
